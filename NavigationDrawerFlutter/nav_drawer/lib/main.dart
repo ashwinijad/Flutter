@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
-
 class MyApp extends StatelessWidget {
-  final appTitle = 'My First Flutter App';
-
+  final appTitle = 'Nav drawer';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -12,12 +10,9 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyHomePage extends StatelessWidget {
   final String title;
-
   MyHomePage({Key key, this.title}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +40,7 @@ class MyHomePage extends StatelessWidget {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Menu1Page()),
                 );
@@ -69,7 +64,6 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-
 class Menu1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -88,7 +82,6 @@ class Menu1Page extends StatelessWidget {
     );
   }
 }
-
 class Menu2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
