@@ -49,9 +49,6 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               title: Text('Menu 2', style: TextStyle(color: Colors.deepOrange),),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Menu2Page()),
